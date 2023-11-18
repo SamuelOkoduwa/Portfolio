@@ -1,0 +1,211 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #331E25;
+	border-radius: 5px;
+	padding: 10px;
+}
+/* The header Section */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 25px;
+}
+.logo img{
+	width:50px;
+	height: 50px;
+	border-radius: 15px;
+}
+.navigation-bar {
+	display: flex;
+	padding-right: 35px;
+	
+}
+.navigation-bar ul{
+	display: flex;
+	list-style-type: none;	
+}
+.navigation-bar ul li {
+	padding: 30px;
+}
+.navigation-bar ul li a{
+	text-decoration: none;
+	color: #BC855D;
+	font-size: 25px;
+}
+.navigation-bar ul li a:hover {
+	color: chocolate;
+}
+.hamburger {
+	display: none;
+}
+
+@media  only screen and (max-width: 1000px) {
+	.hamburger {
+		display: block;
+		font-size: 30px;
+	}
+	.navigation-bar ul {
+		display: none;
+	}	
+}
+
+/* About me sextion */
+.about_me-section {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+h1 {
+	color: white;
+	text-align: center;
+}
+.name {
+	text-align: center;
+}
+.name span {
+	color: #BC855D;
+}
+p {
+	color:#BC855D;
+	text-align: justify;
+}
+@media only screen and (max-width: 1000px) {
+	.about_me-section {
+		display: flex;
+		flex-direction: column;
+	}
+	.about_me-image h1 {
+		display: none;
+	}
+}
+/* About Me Navigation Bar */
+nav ul {
+	display: flex;
+	font-size: 25px;
+	list-style-type: none;
+	gap: 15px;
+	justify-content: space-between;
+}
+
+nav ul li a {
+	text-decoration-color:#BC855D;
+	color: white;
+	/* width: 670px; */
+}
+nav ul li span a{
+	color: white;
+	text-decoration: none;
+}
+.about_me-hamburger {
+	display: none;
+}
+
+@media only screen and (max-width: 1000px){
+	.about_me-hamburger {
+		display: flex;
+		height: 30px;
+		color: transparent;
+	}
+	.skill-detail {
+		display: flex;
+		color: white;
+		align-items: center;
+	}
+	#skill {
+		display: flex;
+		padding-left: 50px;
+		font-size: 30px;
+		background-color: black
+	}
+	#education {
+		display: flex;
+	}
+	nav ul{
+		display: none;
+	}
+}
+/* @media only screen and (max-width: 600px) {
+	About Me Data
+	.about_me-section {
+		display: flex;
+		flex-direction: column;
+		border: 4px solid black;
+		width: 100%;	
+	}
+} */
+/* Skills Description */
+h2 {
+	color: white;
+}
+#skill {
+	display: none;
+}
+#experience {
+	display: none;
+}
+#education {
+	display: none;
+}
+.skill {
+	margin-bottom: 50px;
+	text-align: justify;
+}
+.skill h2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.skill h2 span {
+	padding-right: 10%;
+}
+.skill h2 a {
+	color: white;
+	text-decoration: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+.skill h2 a:hover {
+	color: chocolate;
+}
+.skill li {
+	text-align: justify;
+	font-size: 20px;
+}
+.skill ul{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.skill ul li {
+	color: #BC855D;
+}
+
+
+/* The footer */
+footer {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+	text-align: center;
+	padding-top: 100px;
+	font-size: 40px;
+}
+.footer-contact a {
+	color: white;
+}
+.footer-contact a:hover {
+	color: #BC855D;
+}
+.footer-socials {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.social img{
+	width: 30px;
+	height: 30px;
+}

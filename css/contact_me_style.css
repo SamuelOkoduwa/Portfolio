@@ -1,0 +1,178 @@
+body {
+	margin: 0;
+	background-color: #331E25;
+	border-radius: 5px;
+	padding: 10px;
+}
+/* The header Section */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 25px;
+}
+.logo img{
+	width:50px;
+	height: 50px;
+	border-radius: 15px;
+}
+.navigation-bar {
+	display: flex;
+	padding-right: 35px;
+	
+}
+.navigation-bar ul{
+	display: flex;
+	list-style-type: none;	
+}
+.navigation-bar ul li {
+	padding: 30px;
+}
+.navigation-bar ul li a{
+	text-decoration: none;
+	color: #BC855D;
+	font-size: 25px;
+}
+.navigation-bar ul li a:hover {
+	color: chocolate;
+}
+.hamburger {
+	display: none;
+}
+
+@media  only screen and (max-width: 1000px) {
+	.hamburger {
+		display: block;
+		font-size: 30px;
+	}
+	.navigation-bar ul {
+		display: none;
+	}	
+}
+
+
+
+/* Contact-Section */
+.contact {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 200px;
+	color: aliceblue;
+	padding-right: 30px;
+	align-items: baseline;
+	
+}
+.contact-bio {
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-start;
+	/* border: 1px solid white; */
+	/* width: 45%; */
+}
+.contact-note {
+	/* border: 1px solid white; */
+	width: 45%;
+	
+}
+h1 {
+	font-size: 100px;
+	padding-left: 20px;
+}
+.email {
+	display: flex;
+	align-items: center;
+}
+.email img {
+	width: 100px;
+}
+p {
+	font-size: 40px;
+	color: #BC855D;
+}
+.phone-number {
+	display: flex;
+	align-items: center;
+	
+}
+.phone-number img {
+	height: 70px;
+	width: 100px;
+}
+.download {
+	padding-top: 50px;
+	align-self: center;
+}
+.download a{
+	background-color: #BC855D;
+	color: white;
+	font-size: 40px;
+	text-decoration: none;
+	padding: 20px;
+	border: none;
+	border-radius: 10px;
+}
+
+
+
+/* Form */
+input {
+	/* width: 93%; */
+	background-color: #BC855D;
+	padding: 20px;
+	font-size: 30px;
+	width: 500px;
+}
+textarea {
+	width: 535px;
+	background-color: #BC855D;
+	font-size: 30px;
+}
+button {
+	background-color: #BC855D;
+	margin-top: 20px;
+	font-size: 30px;
+	font-weight: 400px;
+	color: white;
+	padding: 30px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+button:hover {
+	color: chocolate;
+}
+@media only screen and (max-width:1000px) {
+	.email, .phone-number, .download {
+		display: none;
+	}
+	textarea {
+		justify-content: left;
+	}	
+}
+
+/* The footer */
+footer {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+	text-align: center;
+	padding-top: 450px;
+	font-size: 40px;
+}
+.footer-contact a {
+	color: white;
+}
+.footer-contact a:hover {
+	color: #BC855D;
+}
+.footer-socials {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.social img{
+	width: 30px;
+	height: 30px;
+}
